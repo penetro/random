@@ -1,0 +1,51 @@
+
+<html>
+<head>
+	<title> Hallo Welt </title>
+
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+	<div>
+		<h1> Die Grüne Welt des Marihuanas </h1>
+		<br/>
+		Es gibt verschiedene Sorten von Marihuana, überall auf dieser Welt verstreut.
+		<br/>
+		<br/>
+		<hr/>
+
+		<img src="http://www.deutschlandfunkkultur.de/media/thumbs/3/33270197286f34a647a598ac91341883v1_max_635x357_b3535db83dc50e27c1bb1392364c95a2.jpg?key=b27bde"/>
+		<br/>
+		<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+		<textarea id="text" cols="45" rows="3">Hello world</textarea>
+
+		<select id="voiceselection"></select>
+
+		<input
+		  onclick="responsiveVoice.speak($('#text').val(),$('#voiceselection').val());"
+		  type="button"
+		  value="Play"
+		/>
+
+		<script>
+		        //Populate voice selection dropdown
+		        var voicelist = responsiveVoice.getVoices();
+		        var vselect = $("#voiceselection");
+		        $.each(voicelist, function() {
+		                vselect.append($("<option />").val(this.name).text(this.name));
+		        });
+		</script>
+		<br/>
+		<br/>
+
+		<iframe src="https://giphy.com/embed/3o6ZtpFbEau0lhqvN6" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen>
+		</iframe>
+		<br/>
+		<br/>
+		<br/>
+		<h2> SIE HABEN EINEN VIRUS </h2>
+	</div>
+</body>
+</html>
